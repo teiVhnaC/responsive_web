@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web</title>
+    <style type="text/css">
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 300;
+            font-size: 1.3125rem;
+            line-height: 1.6;
+        }
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+        h1,
+        h2,
+        h3 {
+            line-height: 1;
+            font-weight: 800;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h2,
+        h3 {
+            margin-bottom: 1em;
+        }
+        header,
+        section {
+            padding: 3rem 0;
+        }
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+        .bg-light{
+            background-color: lightgoldenrodyellow;
+        }
+        .bg-primary{
+            color: whitesmoke;
+            background-color: brown;
+        }
+        .bg-dark{
+            color: burlywood;
+            background-color: darkblue;
+        }
+        .container {
+            margin-inline: auto;
+            width: min(90%, 70.5rem);
+        }
+        .split {
+            display: flex;
+            flex-direction: column;
+        }
+        @media (min-width: 40em) {
+            .split {
+                flex-direction: row;
+            }
+            .split > * {
+                flex-basis: 100%;
+            }
+        }
+        .container--narow {
+            max-width: 40rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+  <section class="bg-light text-center">
+    <div class="container container--narrow">
+      <p>Lorem, ipsum dolor.</p>
+      <h2>Responsive layouts don't have to be a struggle</h2>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="text-center">Quality Designs</h2>
+      <div class="split">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam inventore nemo, asperiores dolorem
+            nisi voluptate omnis quam sit doloremque expedita architecto dicta, at consequatur.</p>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam inventore nemo, asperiores dolorem
+            nisi voluptate omnis quam sit doloremque expedita architecto dicta, at consequatur.</p>
+        </div>
+        <div>
+          <p>Eum quisquam deleniti facere fugit. Vero quidem sunt fuga fugit ea voluptatum placeat ullam eveniet,
+            minima
+            sed veritatis laboriosam. Quia cumque est cupiditate quod eum?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Made custom for you</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsum dicta fuga vero aliquam! Officiis?</p>
+        </div>
+        <div>
+          <img src="./hinhanh/image-01.jpg" alt="man standing on mountain edge looking at sunset">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary">
+    <div class="container">
+      <div class="split">
+        <div>
+          <img src="./hinhanh/image-02.jpg" alt="foggy mountains with sun setting behind them">
+        </div>
+        <div>
+          <h2>Created with care</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis id hic at vel voluptatem reiciendis
+            aut,
+            esse aperiam? Quia aperiam nesciunt sint iste laboriosam quibusdam minus molestias blanditiis esse!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
