@@ -6,77 +6,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Web</title>
     <style type="text/css">
-        *,
-        *::after,
-        *::before {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 300;
-            font-size: 1.3125rem;
-            line-height: 1.6;
-        }
-        body,
-        h1,
-        h2,
-        h3,
-        p {
-            margin: 0;
-        }
-        h1,
-        h2,
-        h3 {
-            line-height: 1;
-            font-weight: 800;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        h2,
-        h3 {
-            margin-bottom: 1em;
-        }
-        header,
-        section {
-            padding: 3rem 0;
-        }
-        img {
-            max-width: 100%;
-            object-fit: cover;
-        }
-        .bg-light{
-            background-color: lightgoldenrodyellow;
-        }
-        .bg-primary{
-            color: whitesmoke;
-            background-color: brown;
-        }
-        .bg-dark{
-            color: burlywood;
-            background-color: darkblue;
-        }
-        .container {
-            margin-inline: auto;
-            width: min(90%, 70.5rem);
-        }
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 300;
+        font-size: 1.3125rem;
+        line-height: 1.6;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        line-height: 1;
+        font-weight: 800;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      h2,
+      h3 {
+        margin-bottom: 1em;
+      }
+      header,
+      section {
+        padding: 3rem 0;
+      }
+      img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+      .bg-light{
+        background-color: lightgoldenrodyellow;
+      }
+      .bg-primary{
+        color: whitesmoke;
+        background-color: brown;
+      }
+      .bg-dark{
+        color: burlywood;
+        background-color: darkblue;
+      }
+      .container {
+        margin-inline: auto;
+        width: min(90%, 70.5rem);
+      }
+      .split {
+        display: flex;
+        flex-direction: column;
+      }
+      @media (min-width: 40em) {
         .split {
-            display: flex;
-            flex-direction: column;
+          flex-direction: row;
         }
-        @media (min-width: 40em) {
-            .split {
-                flex-direction: row;
-            }
-            .split > * {
-                flex-basis: 100%;
-            }
+        .split > * {
+          flex-basis: 100%;
         }
-        .container--narow {
-            max-width: 40rem;
-        }
-        .text-center {
-            text-align: center;
-        }
-        
+      }
+      .text-center {
+        text-align: center;
+      }
+      .contains {
+        margin-inline: auto;
+        width: min(60%, 70.5rem);
+        padding: 3rem 0;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .contents {
+        background-color: rebeccapurple;
+        margin: 0.125em;
+        padding: 2em;
+        text-align: center;
+        font-weight: 500;
+        box-sizing: border-box;
+        width: 10em;
+        height: 10em;
+      }
     </style>
 </head>
 
@@ -140,6 +156,16 @@
     </div>
   </section>
 
+  <div class="contains">
+    <div class="contents"><h1>RED</h1></div>
+    <div class="contents"><h1>BLACK</h1></h2></div>
+    <div class="contents"><h1>BLUE</h1></div>
+    <div class="contents"><h1>WHITE</h1></div>
+    <div class="contents"><h1>RED</h1></div>
+    <div class="contents"><h1>BLACK</h1></h2></div>
+    <div class="contents"><h1>BLUE</h1></div>
+    <div class="contents"><h1>WHITE</h1></div>
+  </div>
 </body>
 
 </html>
